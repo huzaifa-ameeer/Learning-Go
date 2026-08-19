@@ -32,20 +32,31 @@
 // 	fmt.Println("Sum:", r1, "Sub:", r2)
 // }
 
-package main 
+// package main 
+// import "fmt"
+
+// func sumAll (nums... int) int {
+// 	total := 0
+// 	for _, value := range nums{
+// 		total = total + value
+// 	}
+// 	return total
+// }
+
+// func main (){
+// 	// fmt.Println(sumAll(1,2,3,4,5,6,7,8,9,10))
+
+// 	values := [] int {1,2,3,4,5}
+// 	fmt.Println(sumAll(values...))
+// }
+
+package main
 import "fmt"
 
-func sumAll (nums... int) int {
-	total := 0
-	for _, value := range nums{
-		total = total + value
-	}
-	return total
-}
-
 func main (){
-	// fmt.Println(sumAll(1,2,3,4,5,6,7,8,9,10))
+	res := func(a int, b int) int {
+		return a + b
+	} (5,6)
 
-	values := [] int {1,2,3,4,5}
-	fmt.Println(sumAll(values...))
+	fmt.Println(res)
 }
